@@ -8,7 +8,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/2026-SW-finalProject/" : "/",
   plugins: [react()],
   resolve: {
     alias: {
@@ -18,6 +19,7 @@ export default defineConfig({
       "@contexts": path.resolve(__dirname, "./src/contexts"),
       "@images": path.resolve(__dirname, "./src/assets/images"),
       "@utils": path.resolve(__dirname, "./src/utils"),
+      "@data": path.resolve(__dirname, "./src/data"),
     },
   },
   css: {
@@ -32,4 +34,4 @@ export default defineConfig({
       },
     },
   },
-});
+}));
