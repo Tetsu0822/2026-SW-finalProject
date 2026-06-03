@@ -1,0 +1,67 @@
+input,
+textarea {
+    font: inherit;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+body {
+    color: $neutral-700;
+    background-color: $primary-50;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-family: "Noto Sans", sans-serif;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* google icon 預設設定 */
+
+.material-symbols-outlined {
+    font-variation-settings:
+        "FILL" 0,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 24;
+    font-size: 20px;
+    display: block;
+}
+
+/* Label - font-weight: 500 */
+.label-md {
+    font-size: 16px;
+    font-weight: 500;
+}
+.label-sm {
+    font-size: 14px;
+    font-weight: 500;
+}
+.label-xs {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Paragraph - font-weight: 500 */
+.paragraph-md {
+    font-size: 16px;
+    font-weight: 500;
+}
+.paragraph-sm {
+    font-size: 14px;
+    font-weight: 500;
+}
+.paragraph-xs {
+    font-size: 13px;
+    font-weight: 500;
+}

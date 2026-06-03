@@ -1,0 +1,88 @@
+
+.logo,
+.logo-mobile {
+    display: block;
+    line-height: 0;
+    padding: 12px 0;
+}
+
+.logo img {
+    width: 140px;
+    height: 40px;
+    display: block;
+}
+
+.logo-mobile img {
+    width: 112px;
+    height: 32px;
+    display: block;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+    gap: 24px;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 4px 12px;
+    &:hover {
+        color: $neutral-0;
+        background-color: $primary-900;
+    }
+}
+
+.nav-toggle {
+    background: transparent; /* 移除按鈕預設背景 */
+    border: 0;
+    padding: 12px;
+    color: inherit; /* 繼承父層文字顏色 */
+    font: 100% inherit; /* 繼承父層字型設定 */
+    cursor: pointer; /* 滑鼠移入時顯示手型游標 */
+}
+
+@media (max-width: 767.98px) {
+    .header-inner {
+        position: relative;
+        min-height: 60px;
+    }
+
+    .logo-mobile {
+        padding: 8px 0;
+    }
+
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        margin: 8px 0 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background-color: $primary-50;
+        border-radius: 8px;
+        padding: 8px;
+        box-shadow: 0 8px 24px rgba($black, 0.12);
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 12px;
+    }
+}
