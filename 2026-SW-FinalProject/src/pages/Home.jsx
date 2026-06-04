@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 function Home() {
     return (
+        <>
         <section className="hero">
             <div className="container h-100">
                 <div className="row h-100 gap-6 gap-md-0">
@@ -39,6 +40,29 @@ function Home() {
 
             </div>
         </section>
+        <section className="services">
+            <div className="container">
+                <p className="fs-xxxs">服務項目</p>
+                <h2 className="fs-1 mb-6">SERVICES</h2>
+                <div className="services-list">
+                    <div className="services-card">
+                        <div className="d-flex justify-content-between align-items-center w-100">
+                            <h3 className="services-card-title">
+                                GRAPHIC
+                            </h3>
+                            <div className="services-card-icon">
+                                <span className="material-symbols-outlined">
+                                    format_color_fill
+                                </span>
+                            </div>
+                        </div>
+                        <h4 className="fs-5">平面設計</h4>
+                        <p className="services-card-description">Service Description</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </>
     )
 }
 
