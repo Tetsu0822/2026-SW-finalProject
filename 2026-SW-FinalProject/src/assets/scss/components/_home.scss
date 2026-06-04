@@ -1,4 +1,5 @@
 .hero {
+    position: relative;
     height: calc(
         100vh - 64px
     );
@@ -31,23 +32,133 @@
         object-fit: cover;
         object-position: 70% center;
     }
+}
 
+.decorate-1 {
+    position: absolute;
+    top: 97px;
+    left: -81px;
+    width: 200px;
+    height: 198px;
+}
+
+.decorate-2 {
+    position: absolute;
+    bottom: 87px;
+    right: -80px;
+    width: 160px;
+    height: 137px;
+}
+
+.decorate-3 {
+    position: absolute;
+
+    &.flower-left-bottom {
+        left: 391px;
+        bottom: 192px;
+        width: 80px;
+        height: auto;
+    }
+
+    &.flower-left-top {
+        // 當hero 為 relative
+        // top: 56px;
+        // left: 86px;
+        // 當 col-md-5 為 relative
+        top: 56px;
+        left: -225px;
+    }
+
+    &.flower-right-center {
+        top: 206px;
+        right: -179px;
+    }
+}
+
+.decorate-4 {
+    position: absolute;
+    // 當hero 為 relative
+    // top: 120px;
+    // left:225px;
+    // 當 col-md-5 為 relative
+    top: 120px;
+    left: -87px;
+}
+
+.decorate-5 {
+    position: absolute;
+    left: 211px;
+    bottom: 83px;
+    width: 180px;
+    height: 120px;
+}
+
+.decorate-6 {
+    display: none;
 }
 
 @media (max-width: 767.98px) {
     .hero {
         height: auto;
-        overflow: visible;
-
+        overflow-x: clip;
+        overflow-y: visible;
+        position: relative;
         .container,
         .row,
         .col-12 {
             height: auto !important;
         }
-
         .hero-img {
             height: auto;
             aspect-ratio: 351 / 376.41;
+        }
+
+        .decorate-1 {
+            top: 26px;
+            left: -15px;
+            width: 80px;
+            height: 79px;
+        }
+
+        .decorate-2 {
+            top: 274px;
+            right: -25px;
+            width: 80px;
+            height: 69px;
+        }
+
+        .decorate-3 {
+            &.flower-left-top {
+                display: none;
+            }
+
+            &.flower-left-bottom {
+                top: 14px;
+                bottom: auto;
+                left: auto;
+                right: 22px;
+                width: 80px;
+                height: 80px;
+            }
+
+            &.flower-right-center {
+                display: none;
+            }
+        }
+
+        .decorate-4 {
+            display: none;
+        }
+
+        .decorate-5 {
+            display: none;
+        }
+
+        .decorate-6 {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 102.5px;
         }
     }
 }
