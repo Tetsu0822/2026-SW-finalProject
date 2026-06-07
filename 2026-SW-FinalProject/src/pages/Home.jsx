@@ -11,7 +11,7 @@ function Home() {
                             Hello<br />
                             I'm Nelson
                         </h1>
-                        <p className="paragraph-md text-start w-100 pb-1">我是一個擁有 10 年經驗的 UIUX 設計師 和 前端工程師</p>
+                        <p className="paragraph-md text-start w-100 pb-1">我是一個擁有 10 年經驗的 UI/UX 設計師 和 前端工程師</p>
                         <p className="paragraph-md text-start w-100">喜歡把美學和程式結合，打造一個又一個精美的網頁設計！</p>
                         <div className="hero-link label-md">
                             <Link className="heroBtn active" to="/contact">與我聯絡</Link>
@@ -214,7 +214,7 @@ function Home() {
                         </div>
                         <div>
                             <p className="fw-normal fs-10 fs-md-9 mb-2 mb-md-3">
-                                <span>UIUX 設計</span>
+                                <span>UI/UX 設計</span>
                                 <span>・</span>
                                 <span>網頁設計</span>
                                 <span>・</span>
@@ -256,7 +256,7 @@ function Home() {
                                 <span>・</span>
                                 <span>平面設計</span>
                                 <span>・</span>
-                                <span>UIUX 設計</span>
+                                <span>UI/UX 設計</span>
                             </p>
                             <h3 className="fs-7 fs-md-6 fw-bold mb-2 mb-md-3">從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯</h3>
                             <div className="d-flex fw-normal fs-10 fs-md-9 mb-2 mb-md-3">

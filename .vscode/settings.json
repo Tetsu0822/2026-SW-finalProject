@@ -1,0 +1,17 @@
+{
+  "cSpell.words": [
+    "cssgrid",
+    "fusv",
+    "opsz",
+    "wght",
+    "zindex"
+  ],
+  "cSpell.ignorePaths": [
+    "**/src/assets/scss/abstract/_variables.scss",
+    "**/src/assets/scss/_base.scss"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact"
+  ]
+}
