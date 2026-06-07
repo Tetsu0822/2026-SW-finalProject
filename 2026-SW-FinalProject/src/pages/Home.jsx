@@ -145,7 +145,7 @@ function Home() {
                 <p className="projects-item text-center">專案作品</p>
                 <h2 className="projects-item-title text-center mb-6 mb-md-10">PROJECTS</h2>
                 <ul>
-                    <li className="project-card bg-cover-center bg-primary-50 text-center p-4 p-md-6">
+                    <li className="project-card bg-cover-center bg-primary-50 text-center">
                         <div className="project-card-content p-6 p-md-10">
                             <time className="mb-3 d-block" dateTime="2025-10-16">Oct 16, 2025</time>
                             <p className="fs-10 fs-md-9 fw-normal mb-3">平面設計・網頁設計</p>
@@ -154,7 +154,7 @@ function Home() {
                             <button className="project-card-button btn-reset rounded-pill bg-neutral-700 text-neutral-0 fs-10 fs-md-9">前往專案</button>
                         </div>
                     </li>
-                    <li className="project-card bg-cover-center bg-primary-50 text-center p-4 p-md-6">
+                    <li className="project-card bg-cover-center bg-primary-50 text-center">
                         <div className="project-card-content p-6 p-md-10">
                             <time className="mb-3 d-block" dateTime="2025-10-16">Oct 16, 2025</time>
                             <p className="fs-10 fs-md-9 fw-normal mb-3">平面設計・網頁設計・前端切版</p>
@@ -163,7 +163,7 @@ function Home() {
                             <button className="project-card-button btn-reset rounded-pill bg-neutral-700 text-neutral-0 fs-10 fs-md-9">前往專案</button>
                         </div>
                     </li>
-                    <li className="project-card bg-cover-center bg-primary-50 text-center p-4 p-md-6">
+                    <li className="project-card bg-cover-center bg-primary-50 text-center">
                         <div className="project-card-content p-6 p-md-10">
                             <time className="mb-3 d-block" dateTime="2025-10-16">Oct 16, 2025</time>
                             <p className="fs-10 fs-md-9 fw-normal mb-3">前端切版・後端開發</p>

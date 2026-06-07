@@ -327,9 +327,9 @@
             gap: 12px;
         }
     }
-    .project-card {
+    .projects .project-card {
         min-height: 0;
-        padding-top: 280px;
+        padding: 280px 16px 16px;
         &:nth-of-type(1) {
         background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_1.png?raw=true");
         }
