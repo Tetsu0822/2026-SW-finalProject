@@ -29,12 +29,14 @@ function Header() {
                             <button
                                 className="nav-toggle d-md-none ms-auto"
                                 type="button"
-                                aria-label="Toggle navigation"
+                                aria-label={isMenuOpen ? 'Close navigation' : 'Toggle navigation'}
                                 aria-controls="site-navigation"
                                 aria-expanded={isMenuOpen}
                                 onClick={handleToggleMenu}
                             >
-                                <span className="material-symbols-outlined">dehaze</span>
+                                <span className="material-symbols-outlined">
+                                    {isMenuOpen ? 'close' : 'dehaze'}
+                                </span>
                             </button>
                             {/* 主導覽選單 */}
                             <ul

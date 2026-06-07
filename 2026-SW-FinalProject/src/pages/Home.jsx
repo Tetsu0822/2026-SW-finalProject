@@ -42,12 +42,12 @@ function Home() {
         </section>
         <section className="services">
             <div className="container">
-                <p className="fs-xxxs">服務項目</p>
-                <h2 className="fs-1 mb-6">SERVICES</h2>
+                <p className="services-item">服務項目</p>
+                <h2 className="services-item-title mb-6">SERVICES</h2>
                 <div className="services-list">
                     <div className="services-card">
                         <div className="d-flex justify-content-between align-items-center w-100">
-                            <h3 className="services-card-title">
+                            <h3 className="services-card-title fs-10 fs-md-9">
                                 GRAPHIC
                             </h3>
                             <div className="services-card-icon">
@@ -56,10 +56,123 @@ function Home() {
                                 </span>
                             </div>
                         </div>
-                        <h4 className="fs-5">平面設計</h4>
-                        <p className="services-card-description">Service Description</p>
+                        <h4 className="fs-6 fs-md-5">平面設計</h4>
+                        <div className="services-footer">
+                            <div className="services-footer-text fs-10 fs-md-9">
+                                美感易用並重，以 Figma 打造符合直覺的數位體驗
+                            </div>
+                            <a className="services-footer-icon" href="#">
+                                <span className="material-symbols-outlined">
+                                    arrow_outward
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="services-card">
+                        <div className="d-flex justify-content-between align-items-center w-100">
+                            <h3 className="services-card-title fs-10 fs-md-9">
+                                WEBSITE
+                            </h3>
+                            <div className="services-card-icon">
+                                <span className="material-symbols-outlined">
+                                    screenshot_monitor
+                                </span>
+                            </div>
+                        </div>
+                        <h4 className="fs-5">網頁設計</h4>
+                        <div className="services-footer">
+                            <div className="services-footer-text fs-10 fs-md-9">
+                                美感易用並重，以 Figma 打造符合直覺的數位體驗
+                            </div>
+                            <a className="services-footer-icon" href="#">
+                                <span className="material-symbols-outlined">
+                                    arrow_outward
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="services-card">
+                        <div className="d-flex justify-content-between align-items-center w-100">
+                            <h3 className="services-card-title fs-10 fs-md-9">
+                                FRONTEND
+                            </h3>
+                            <div className="services-card-icon">
+                                <span className="material-symbols-outlined">
+                                    web
+                                </span>
+                            </div>
+                        </div>
+                        <h4 className="fs-5">前端切版</h4>
+                        <div className="services-footer">
+                            <div className="services-footer-text fs-10 fs-md-9">
+                                精準轉譯設計稿細節，建構流暢穩定 RWD 響應式網頁
+                            </div>
+                            <a className="services-footer-icon" href="#">
+                                <span className="material-symbols-outlined">
+                                    arrow_outward
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="services-card">
+                        <div className="d-flex justify-content-between align-items-center w-100">
+                            <h3 className="services-card-title fs-10 fs-md-9">
+                                BACKEND
+                            </h3>
+                            <div className="services-card-icon">
+                                <span className="material-symbols-outlined">
+                                data_table
+                                </span>
+                            </div>
+                        </div>
+                        <h4 className="fs-5">後端開發</h4>
+                        <div className="services-footer">
+                            <div className="services-footer-text fs-10 fs-md-9">
+                                佈署穩定系統架構，串接 API 並確保數據處理安全
+                            </div>
+                            <a className="services-footer-icon" href="#">
+                                <span className="material-symbols-outlined">
+                                    arrow_outward
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section className="projects">
+            <div className="container">
+                <p className="projects-item text-center">專案作品</p>
+                <h2 className="projects-item-title text-center mb-6 mb-md-10">PROJECTS</h2>
+                <ul>
+                    <li className="project-card bg-cover-center bg-primary-50 text-center p-4 p-md-6">
+                        <div className="project-card-content p-6 p-md-10">
+                            <time className="mb-3 d-block" dateTime="2025-10-16">Oct 16, 2025</time>
+                            <p className="fs-10 fs-md-9 fw-normal mb-3">平面設計・網頁設計</p>
+                            <h3 className="fs-7 fs-md-6 fw-bold mb-3">品牌視覺與電商整合，多肉植物品牌電商建置</h3>
+                            <p className="fs-10 fs-md-9 fw-normal mb-3">從品牌識別設計到 RWD 網站開發，打造療癒系植栽購物體驗</p>
+                            <button className="project-card-button btn-reset rounded-pill bg-neutral-700 text-neutral-0 fs-10 fs-md-9">前往專案</button>
+                        </div>
+                    </li>
+                    <li className="project-card bg-cover-center bg-primary-50 text-center p-4 p-md-6">
+                        <div className="project-card-content p-6 p-md-10">
+                            <time className="mb-3 d-block" dateTime="2025-10-16">Oct 16, 2025</time>
+                            <p className="fs-10 fs-md-9 fw-normal mb-3">平面設計・網頁設計・前端切版</p>
+                            <h3 className="fs-7 fs-md-6 fw-bold mb-3">數位產品 UI/UX 設計，個人化財務視覺化軟體</h3>
+                            <p className="fs-10 fs-md-9 fw-normal mb-3">運用數據視覺化邏輯，將複雜的財務數據轉化為直覺的操作介面</p>
+                            <button className="project-card-button btn-reset rounded-pill bg-neutral-700 text-neutral-0 fs-10 fs-md-9">前往專案</button>
+                        </div>
+                    </li>
+                    <li className="project-card bg-cover-center bg-primary-50 text-center p-4 p-md-6">
+                        <div className="project-card-content p-6 p-md-10">
+                            <time className="mb-3 d-block" dateTime="2025-10-16">Oct 16, 2025</time>
+                            <p className="fs-10 fs-md-9 fw-normal mb-3">前端切版・後端開發</p>
+                            <h3 className="fs-7 fs-md-6 fw-bold mb-3">品牌識別與包裝設計，法式甜點品牌視覺重塑</h3>
+                            <p className="fs-10 fs-md-9 fw-normal mb-3">以溫暖、輕盈的視覺語言，精準定位高質感甜點市場的品牌形象</p>
+                            <button className="project-card-button btn-reset rounded-pill bg-neutral-700 text-neutral-0 fs-10 fs-md-9">前往專案</button>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
         </>

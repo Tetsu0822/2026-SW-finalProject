@@ -1,3 +1,25 @@
 .ml-auto {
     margin-left: auto !important;
 }
+
+@media (min-width: 768px) {
+    @each $size, $value in $font-sizes {
+        .fs-md-#{$size} {
+            font-size: $value !important;
+        }
+    }
+}
+
+.btn-reset {
+    border: 0;
+    background: transparent; /* 移除按鈕預設背景 */
+    color: inherit; /* 繼承父層文字顏色 */
+    font: inherit; /* 繼承父層字型設定 */
+    cursor: pointer; /* 滑鼠移入時顯示手型游標 */
+}
+
+.bg-cover-center {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -169,6 +169,14 @@
     color: $neutral-0;
     padding: 5rem 2.5rem;
     background-color: $neutral-900;
+    &-item {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    &-item-title {
+        font-size: 80px;
+        line-height: 1.2;
+    }
     &-list {
         display: flex;
         justify-content: flex-start;
@@ -177,12 +185,13 @@
         padding: 0;
         margin: 0;
         .services-card {
-            width: 25%;
+            color: $neutral-700;
+            min-width: 306px;
             height: auto;
             background-color: $neutral-0;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: start;
             gap: .75rem;
             padding: 2.5rem;
             .services-card-icon {
@@ -192,10 +201,149 @@
             }
             .services-card-title {
                 color: $neutral-700;
-                font-weight: 500;
-                font-size: 1.25rem;
-                line-height: 1.75rem;
+            }
+            .services-footer {
+                margin-top: auto;
+                display: flex;
+                align-items: center;
+                gap: .75rem;
+                .services-footer-icon {
+                    width: 48px;
+                    height: 48px;
+                    padding: .75rem;
+                    color: $neutral-0;
+                    background-color: $neutral-700;
+                    border: 0;
+                    border-radius: 1000px;
+                    .material-symbols-outlined {
+                        font-size: 24px;
+                    }
+                }
+                .services-footer-text {
+                    color: $neutral-700;
+                }
             }
         }
+    }
+}
+
+@media (max-width: 375px) {
+    .services {
+        padding: 2.5rem .75rem;
+        &-item {
+            font-size: 14px;
+        }
+        &-item-title {
+            font-size: 28px;
+        }
+        &-list {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: .75rem;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .services-card {
+                min-width: auto;
+                width: 100%;
+                flex: 0 0 260px;
+                gap: .5rem;
+                padding: .75rem;
+                .services-card-icon {
+                    width: 24px;
+                    height: 24px;
+                }
+                .services-footer {
+                    gap: .5rem;
+                    .services-footer-icon {
+                        width: 44px;
+                        height: 44px;
+                        padding: .75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/* PROJECTS SECTION */
+.projects {
+    padding: 5rem 2.5rem;
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+    }
+    .project-card {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        &:nth-of-type(1) {
+            background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_1.png?raw=true");
+        }
+
+        &:nth-of-type(2) {
+            background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_2.png?raw=true");
+        }
+
+        &:nth-of-type(3) {
+            background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_3.png?raw=true");
+        }
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        .project-card-content {
+            width: 100%;
+            max-width: 386px;
+            margin: 0;
+            background-color: $neutral-0;
+            color: $neutral-700;
+        }
+        .project-card-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 45px;
+            padding: 10px 24px;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .projects {
+        padding: 2.5rem .75rem;
+        ul {
+            gap: 12px;
+        }
+    }
+    .project-card {
+        min-height: 0;
+        padding-top: 280px;
+        &:nth-of-type(1) {
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_1.png?raw=true");
+        }
+
+        &:nth-of-type(2) {
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_2.png?raw=true");
+        }
+
+        &:nth-of-type(3) {
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_3.png?raw=true");
+        }
+    }
+
+    .project-card-content {
+        max-width: none;
     }
 }

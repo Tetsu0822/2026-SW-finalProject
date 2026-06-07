@@ -26,6 +26,12 @@ a {
     color: inherit;
 }
 
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
 /* google icon 預設設定 */
 
 .material-symbols-outlined {
