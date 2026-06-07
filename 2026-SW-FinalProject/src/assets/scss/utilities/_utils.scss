@@ -18,8 +18,25 @@
     cursor: pointer; /* 滑鼠移入時顯示手型游標 */
 }
 
+.btn-outline {
+    border: 1px solid currentColor; /* 使用當前文字顏色作為邊框顏色 */
+    background: transparent; /* 按鈕背景透明 */
+    color: inherit; /* 繼承父層文字顏色 */
+    font: inherit; /* 繼承父層字型設定 */
+    cursor: pointer; /* 滑鼠移入時顯示手型游標 */
+}
+
 .bg-cover-center {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+/* 隱藏捲軸寬度 */
+.hide-scrollbar {
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none; /* Safari 專用 */
+    }
 }
