@@ -371,12 +371,21 @@
     }
 }
 
+.social-text {
+    font-size: 14px;
+    color: $neutral-700;
+    white-space: nowrap;
+}
+
 @media (max-width: 767.98px) {
     .blogs {
         padding: 2.5rem .75rem;
         &-card {
             min-width: 260px;
         }
+    }
+    .social-text {
+        font-size: 13px;
     }
 }
 

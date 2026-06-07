@@ -231,13 +231,13 @@ function Home() {
                                         <span className="material-symbols-outlined me-2 me-md-3">
                                             visibility
                                         </span>
-                                        <span>110 views</span>
+                                        <span className="social-text">110 views</span>
                                     </div>
                                     <div className="d-flex align-items-center">
                                         <span className="material-symbols-outlined me-2 me-md-3">
                                             share
                                         </span>
-                                        <span>2 shares</span>
+                                        <span className="social-text">2 shares</span>
                                     </div>
                                 </div>
                             </div>
@@ -269,13 +269,13 @@ function Home() {
                                         <span className="material-symbols-outlined me-2 me-md-3">
                                             visibility
                                         </span>
-                                        <span>110 views</span>
+                                        <span className="social-text">110 views</span>
                                     </div>
                                     <div className="d-flex align-items-center">
                                         <span className="material-symbols-outlined me-2 me-md-3">
                                             share
                                         </span>
-                                        <span>2 shares</span>
+                                        <span className="social-text">2 shares</span>
                                     </div>
                                 </div>
                             </div>
@@ -307,13 +307,13 @@ function Home() {
                                         <span className="material-symbols-outlined me-2 me-md-3">
                                             visibility
                                         </span>
-                                        <span>110 views</span>
+                                        <span className="social-text">110 views</span>
                                     </div>
                                     <div className="d-flex align-items-center">
                                         <span className="material-symbols-outlined me-2 me-md-3">
                                             share
                                         </span>
-                                        <span>2 shares</span>
+                                        <span className="social-text">2 shares</span>
                                     </div>
                                 </div>
                             </div>
